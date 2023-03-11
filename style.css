@@ -1,0 +1,111 @@
+/* Reset and general layout */
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 15px;
+    }
+
+body {
+    padding: 0;
+    margin:0;
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    }
+
+/* reset */
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Card */
+.card-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+
+.card-container__inner {
+    max-width: 275px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px 15px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.card__title {
+    color: hsl(0, 0%, 100%);
+}
+
+.card__text {
+    color:  hsl(217, 12%, 63%);
+}
+
+.card__btn {
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.2ch;
+    border: transparent;
+    border-radius: 50px;
+    padding: 10px 5px;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card__btn:active, .card__btn:hover {
+    color:  hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card__digits-list {
+    margin: 20px 5px;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.card__digits-list div {  
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color:  hsla(216, 12%, 54%, 0.2); 
+    border: transparent;
+    border-radius: 50%;
+}
+
+.card__digits-list div:hover, .card__digits-list div:active {  
+    background-color: hsl(25, 97%, 53%);
+}
+
+.card__digits-list span {  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+}
+
+/* Footer */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
